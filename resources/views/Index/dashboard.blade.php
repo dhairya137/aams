@@ -76,7 +76,11 @@
                         </ul>
                     </li>
 
-                   
+                    <h3 class="menu-title">Manage Admin</h3><!-- /.menu-title -->
+                    <li>
+                        <a href="{{ url('/Admin_profile') }}"><img src="{{asset('admin.png')}}" height="25px" width="25px" alt="Logo" align="Left">&nbsp&nbsp&nbsp&nbsp Admins</a>
+                       
+                    </li>
 
                   
                  

@@ -41,17 +41,17 @@ class StudentController extends Controller
        
 
         $filename = $req->profile;
-        // $imagename =time().".". $file->getClientOriginalExtension();
-        // $file->move(public_path('practice'),$imagename);
+        $imagename =time().".". $file->getClientOriginalExtension();
+        $file->move(public_path('practice'),$imagename);
 
         $values = array('enrollment' => $enrollment,
                         'std_name' => $name, 
                         'std_pwd' => $pwd,
                         'contact_std' => $phn,
-                        // 'semester' => $sem,
-                        // 'div_std' => $div,
-                        // 'batch_std' => $batch,
-                        // 'std_profile' => $imagename,
+                        'semester' => $sem,
+                        'div_std' => $div,
+                        'batch_std' => $batch,
+                        'std_profile' => $imagename,
                         'email_std' => $emailid
                         );
 
@@ -73,18 +73,22 @@ class StudentController extends Controller
         $data='';
         
        
-        foreach ($std as $value) {
-            $data .= '<tr>
-                                            <td>'. $value->enrollment.' </td>
-                                            <td>'.$value->std_name .' </td>
-                                            <td>'.$value->contact_std.' </td>
-                                            <td>'.$value->email_std.' </td>
-                                            <td>'.$value->std_pwd.'</td>
-                                            <td>
-                                              <a href="/modify_student/'.$value->enrollment.'">Modify</a>/<a onclick="return confirm(/"Are you sure you want to delete this student?/");/" href="/remove_student/'.$value->enrollment.'">Remove</a>
-                                            </td>
-                                        </tr>';
-        }
+        // foreach ($std as $value) {
+        //     $data .= '<tr>
+        //                                     <td>'. $value->enrollment.' </td>
+        //                                     <td>'.$value->std_name .' </td>
+        //                                     <td>'.$value->contact_std.' </td>
+        //                                     <td>'.$value->semester.'</td>
+        //                                     <td>'.$value->div_std.' </td>
+        //                                     <td>'.$value->batch_std.' </td>
+        //                                     <td>'.$value->email_std.' </td>
+        //                                     <td>'.$value->std_profile.'</td>
+        //                                     <td>'.$value->std_pwd.'</td>
+        //                                     <td>
+        //                                       <a href="/modify_student/'.$value->enrollment.'">Modify</a>/<a onclick="return confirm(/"Are you sure you want to delete this student?/");/" href="/remove_student/'.$value->enrollment.'">Remove</a>
+        //                                     </td>
+        //                                 </tr>';
+        // }
        /* $data= '<table>
             <tr>
                 <th>ID</th>
@@ -95,10 +99,10 @@ class StudentController extends Controller
                 <td>sahil</td>
             </tr>
         </table>';*/
-        echo json_encode($data);
+        // echo json_encode($data);
         /*echo "$data";
-        exit;
-        return view("Student.student",compact('std'));*/
+        exit;*/
+        return view("Student.student",compact('std'));
     }
 
     //Remove Student

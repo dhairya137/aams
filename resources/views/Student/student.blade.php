@@ -50,7 +50,27 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    
+                                    <tbody>
+                                            <?php
+                                                    foreach ($std as $value) {
+                                            ?>
+                                             <tr>
+                                                <td><?php echo $value->enrollment ?> </td>
+                                                <td><?php echo $value->std_name ?> </td>
+                                                <td><?php echo $value->contact_std ?> </td>
+                                                <td><?php echo $value->semester ?> </td>
+                                                <td><?php echo $value->div_std ?> </td>
+                                                <td><?php echo $value->batch_std ?></td>
+                                                <td><?php echo $value->email_std ?> </td>
+                                                <td><?php echo $value->std_profile ?> </td>
+                                                <td><?php echo $value->std_pwd ?> </td>
+                                                <td> 
+                                                    <a href="/modify_student/<?php echo $value->enrollment?>">Modify</a>
+                                            </tr>
+
+                                        <?php } ?>
+
+                                        </tbody>
                                 </table>
                                 <center><a href="{{ url('/add_student') }}"><button class="btn">Add Student</button></a><button id="details">Student</button></center>
                                 <div id="hello"></div>    

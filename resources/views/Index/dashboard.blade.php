@@ -55,7 +55,7 @@
                     </li>
                     <h3 class="menu-title">Manage Users</h3><!-- /.menu-title -->
                     <li>
-                        <a href="{{ url('/student') }}"><img src="{{asset('Student.png')}}" height="25px" width="25px" alt="Logo" align="Left">&nbsp&nbsp&nbsp&nbsp Students</a>
+                        <a href="{{ url('/student_list') }}"><img src="{{asset('Student.png')}}" height="25px" width="25px" alt="Logo" align="Left">&nbsp&nbsp&nbsp&nbsp Students</a>
                        
                     </li>
                    

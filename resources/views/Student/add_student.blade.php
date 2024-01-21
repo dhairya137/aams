@@ -111,7 +111,7 @@
         </div>
       </li>
 
-      <!-- <li class="form-line jf-required" data-type="control_number" id="id_25">
+      <li class="form-line jf-required" data-type="control_number" id="id_25">
         <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25">
           Semester
           <span class="form-required">
@@ -132,10 +132,10 @@
             <label class="form-sub-label" for="input_25" id="sublabel_input_25" style="min-height:13px" aria-hidden="false"> Semester </label>
           </span>
         </div>
-      </li> -->
+      </li>
 
-   <!-- <li class="form-line jf-required" data-type="control_number" id="id_25"> -->
-        <!-- <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25">
+   <li class="form-line jf-required" data-type="control_number" id="id_25">
+        <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25">
           Division
           <span class="form-required">
             *
@@ -152,9 +152,9 @@
             <label class="form-sub-label" for="input_25" id="sublabel_input_25" style="min-height:13px" aria-hidden="false"> div </label>
           </span>
         </div>
-      </li> -->
+      </li>
 
-<!-- <li class="form-line jf-required" data-type="control_number" id="id_25">
+<li class="form-line jf-required" data-type="control_number" id="id_25">
         <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25">
           Batch
           <span class="form-required">
@@ -180,9 +180,9 @@
             <label class="form-sub-label" for="input_25" id="sublabel_input_25" style="min-height:13px" aria-hidden="false"> div </label>
           </span>
         </div>
-      </li> -->
+      </li>
       
-      <!-- <li class="form-line" data-type="control_textbox" id="id_28">
+      <li class="form-line" data-type="control_textbox" id="id_28">
         <label class="form-label form-label-left form-label-auto" id="label_28" for="input_28"> Profile 
         <span class="form-required">
             *
@@ -194,7 +194,7 @@
             <label class="form-sub-label" for="input_28" id="sublabel_input_28" style="min-height:13px" aria-hidden="false"> Profile </label>
           </span>
         </div>
-      </li> -->
+      </li>
 
       <!--Password Field-->
       <li class="form-line" data-type="control_textbox" id="id_28">

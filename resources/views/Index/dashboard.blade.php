@@ -69,7 +69,7 @@
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('Timetable.png')}}" height="25px" width="25px" align="Left">&nbsp&nbsp&nbsp&nbsp Timetable</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><a href="{{ url('/A_division')}}">A division timetable</a></li>
+                            <!-- <li><a href="{{ url('/A_division')}}">A division timetable</a></li> -->
                             <li><a href="{{ url('/B_division')}}">B division timetable</a></li>
                             <li><a href="{{ url('/C_division')}}">C division timetable</a></li> 
                            

@@ -157,7 +157,7 @@
                         <?php if($day < $value->day_timetable){
                             for($i=$day; $i<$value->day_timetable; $i++) { ?>
                             <td></td>
-                        <?php } }?>
+                            <?php } }?>
                         <td>{{$value->subject_name."-".$value->faculty_name."(".$value->room_lectlab_no.")"}}
                             <?php if($value->batch_table != '0'){ echo $value->batch_table;}  ?>
                       

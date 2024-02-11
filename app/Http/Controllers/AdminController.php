@@ -25,24 +25,22 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-	public function admin_data()
-	{
-		if($_SESSION['id'] != NULL)
-		{
-			$id= $_SESSION['id'];
-			$q="SELECT * FROM  admin where admin_id like '$id'";
-			$sql=DB::select($q);
-			$q1="SELECT * from admin where admin_id != '$id'";
-			$sql1=DB::select($q1);
-			return view("Admin.admin_profile",compact('sql'),compact('sql1'));
-			
-
-		}
-		else
-		{
-			return view('Index.login');
-		}
-	}
+    public function admin_data()
+    {
+        if(isset($_SESSION['id']) && $_SESSION['id'] != NULL)
+        {
+            $id = $_SESSION['id'];
+            $q = "SELECT * FROM admin WHERE admin_id = '$id'";
+            $sql = DB::select($q);
+            $q1 = "SELECT * FROM admin WHERE admin_id != '$id'";
+            $sql1 = DB::select($q1);
+            return view("Admin.admin_profile", compact('sql'), compact('sql1'));
+        }
+        else
+        {
+            return view('Index.login');
+        }
+    }
 
 	public function add_adminaction(Request $req)
 	{
